@@ -1,0 +1,14 @@
+import java.io.*;
+
+public class ReadingWrittingtextfiles {
+    public static void main(String[] args) throws Exception {
+        File file = new File(
+                "C:\\Users\\user\\Downloads\\New folder");
+
+        BufferedReader br= new BufferedReader(new FileReader(file));
+
+        String st;
+        while ((st = br.readLine()) != null)
+            System.out.println(st);
+    }
+}
